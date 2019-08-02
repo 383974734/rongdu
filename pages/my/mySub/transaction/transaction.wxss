@@ -1,0 +1,67 @@
+/* pages/my/mySub/transaction/transaction.wxss */
+page{
+  background-color: #f1f1f1;
+}
+.back-v {
+  width: 100%;
+  height: 100%;
+}
+
+.cell-v {
+  margin: 0rpx 32rpx;
+  height: 166rpx;
+  border-bottom: 1rpx solid #f1f1f1;
+}
+
+
+.orderId {
+  width: 100%;
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 24rpx;
+  color: #999999;
+}
+
+.con-v {
+  width: 100%;
+  height: 28rpx;
+}
+
+.type {
+  height: 28rpx;
+  line-height: 28rpx;
+  padding: 0rpx 20rpx 0rpx 0rpx;
+  margin-right: 20rpx;
+  border-right: 1rpx solid #333333;
+  font-size: 28rpx;
+  float: left;
+}
+
+.terminal {
+  height: 28rpx; 
+  line-height: 28rpx;
+  font-size: 28rpx; 
+  float: left;
+}
+
+.money {
+  height: 28rpx;
+  float: right;
+  font-size: 28rpx;
+  color: #1296db;
+}
+
+
+.time {
+  width: 100%;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 24rpx;
+  color: #999999;
+  margin-top: 20rpx;
+}
+
+.placeholder-img {
+  width: 100%;
+  height: 100%;
+}

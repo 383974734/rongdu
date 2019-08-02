@@ -1,0 +1,100 @@
+/* pages/logs/logsSub/store/store.wxss */
+
+page {
+  background-color: #f1f1f1;
+}
+
+.back-v {
+  margin: 15rpx 17rpx;
+}
+
+.cell {
+  width: 50%;
+  display: inline-block;
+}
+
+.cell-v {
+  margin: 24rpx 15rpx 0rpx 15rpx; 
+  background-color: white;
+  border-radius: 10rpx;
+}
+
+.img {
+  width: 100%;
+  height: 212rpx;
+  border-radius: 10rpx;
+}
+
+.tit {
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 24rpx;
+  color: #333333;
+  font-weight: bold;
+  overflow: hidden;/*超出部分隐藏*/
+  text-overflow:ellipsis;/* 超出部分显示省略号 */
+  white-space: nowrap;/*规定段落中的文本不进行换行 */
+}
+
+.day {
+  height: 20rpx;
+  line-height: 20rpx;
+  font-size: 20rpx;
+  color: #999999;
+  display: inline-block;
+}
+
+.time {
+  height: 20rpx;
+  line-height: 20rpx;
+  font-size: 20rpx;
+  color: #999999;
+  display: inline-block;
+}
+
+.add {
+  height: 20rpx;
+  line-height: 20rpx;
+  font-size: 20rpx;
+  color: #999999;
+}
+
+.bottom-v {
+  height: 79rpx;
+  border-top: 1rpx solid #f1f1f1;
+  margin-top: 20rpx;
+}
+
+.bottom-sub {
+  width: 49%; 
+  height: 50rpx; 
+  display: inline-block;
+  margin-top: 15rpx;
+  border-right: 1rpx solid #f1f1f1;
+}
+
+.bottom-subs {
+  width: 49%; 
+  height: 50rpx; 
+  display: inline-block;
+  margin-top: 15rpx;
+}
+
+.tit-l {
+  width: 70rpx;
+  height: 100%;
+  line-height: 50rpx;
+  font-size: 28rpx;
+  color: #333333;
+  float: left;
+  margin-left: 35rpx;
+}
+
+.tit-r {
+  height: 100%;
+  line-height: 50rpx;
+  font-size: 36rpx;
+  color: #333333;
+  float: left;
+  font-weight: bold;
+}

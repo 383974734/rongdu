@@ -1,0 +1,19 @@
+<!--component/popView/popView.wxml-->
+<view class='mask'>
+
+  <view class='con-view'>
+    <view class='tit-v {{number == 1 ? "tit-v-two" : "tit-color"}}'>
+      <image class='icon' src='../../static/images/ordercon_y.png' hidden='{{number == "2"}}'></image>
+      {{tit}}
+    </view>
+    <view class='con-v'>{{con}}</view>
+    <view class='btn-v'>
+      <view class='btn-one' hidden='{{number == "2"}}' bindtap='goBackClick'>返回首页</view>
+      <view class='btn-two' hidden='{{number == "1"}}'>
+        <view class='dis-v' bindtap='dissClick'>取消</view>
+        <view class='sub-v' bindtap='submitClick'>确定</view>
+      </view>
+    </view>
+  </view>
+
+</view>

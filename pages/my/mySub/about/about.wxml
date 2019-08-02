@@ -1,0 +1,4 @@
+<!--pages/my/mySub/about/about.wxml-->
+<view class='back-v'>
+  <image src='../../../../static/images/about-img.png'></image>
+</view>

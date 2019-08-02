@@ -1,0 +1,17 @@
+/* pages/my/mySub/about/about.wxss */
+
+page{
+  height: 100%;
+}
+
+.back-v {
+    width: 300rpx;
+    height: 870rpx;
+    margin: 0 auto;
+    margin-top: 170rpx;
+}
+
+.back-v image{
+    width: 100%;
+    height: 100%;
+}

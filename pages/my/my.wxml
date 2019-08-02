@@ -1,0 +1,27 @@
+<!--pages/my/my.wxml-->
+
+<!-- 头部用户信息 -->
+<view class='header-view' >
+  <!-- 用户头像 -->
+  <image class='user-img' src='{{json.imageUrl == "" ? userImg : json.imageUrl}}' mode='aspectFill'></image>
+  <!-- 用户名字 -->
+  <view class='user-name'>王某人</view>
+</view> 
+
+
+<!-- 分类选项 -->
+<view class='list-view'>
+  <view class='sections' wx:for='{{listRow}}' wx:key="value" wx:for-indexs="indexs" data-indexs="{{indexs}}">
+    <view class='listTow-b' wx:for="{{item}}" wx:key="value" wx:for-index="index" data-row="{{index}}" data-mes="{{item.tit}}" bindtap='cellpush'>
+      <!-- row-图片 -->
+      <image class='listTow-img' src='{{item.img}}' mode='aspectFill'></image>
+      <!-- row-标题 -->
+      <view class='listTow-tit'>{{item.tit}}</view>
+      <!-- row-箭头 -->
+      <image class='listTow-push' src='../../static/images/my_push.png' mode='aspectFill'></image>
+      <!-- 一根线 -->
+      <view class='lis-v' hidden='{{index == 0}}'></view>
+    </view>
+    
+  </view>
+</view>

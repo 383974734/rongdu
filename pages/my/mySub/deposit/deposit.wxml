@@ -1,0 +1,34 @@
+<!--pages/my/mySub/deposit/deposit.wxml-->
+
+<view class='tit'>租借前需充值押金</view>
+
+<view class='deposit-v' hidden='{{tit == "提现申请"}}'>
+  <view class='wechar-v'>
+    <image class='wechar' src='../../../../static/images/weechar.png'></image>
+  </view>
+  <view class='wechar-tit'>微信支付</view>
+  <view class='money-v'>
+    <view class='money-tit'>押金</view>
+    <view class='money'>￥99</view>
+  </view>
+</view>
+
+<view class='deposit-v' hidden='{{tit != "提现申请"}}'>
+  <view class='wechar-tits'>已缴纳</view>
+  <view class='money-vs'>
+    <view class='money-tit'>押金</view>
+    <view class='money'>￥99</view>
+  </view>
+</view>
+
+
+<view style='height:130rpx; line-height: 130rpx; width: 100%; font-size: 28rpx; margin-left: 32rpx; font-weight: bold;'>退押金流程</view>
+
+<view style='height: 40rpx; line-heighe: 40rpx; color: #999999; font-size: 24rpx; margin-left: 32rpx; font-weight: bold;'>{{titOne}}</view>
+<view style='height: 40rpx; line-heighe: 40rpx; color: #999999; font-size: 24rpx; margin-left: 32rpx; font-weight: bold;'>{{tit == "提现申请" ? titTwo : titTwoS}}</view>
+<view style='height: 40rpx; line-heighe: 40rpx; color: #999999; font-size: 24rpx; margin-left: 32rpx; font-weight: bold;' hidden='{{tit != "提现申请"}}'>{{titThree}}</view>
+
+
+<view class='btn' bindtap='btnClick'>
+  <image  class='btn-img' src='{{tit == "提现申请" ? "../../../../static/images/deposit_btns.png" : "../../../../static/images/deposit_btn.png"}}'></image>
+</view>

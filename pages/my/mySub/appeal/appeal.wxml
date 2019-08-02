@@ -1,0 +1,31 @@
+<!--pages/my/mySub/appeal/appeal.wxml-->
+<form>
+
+  <view style='margin: 0rpx 32rpx;'>
+    <view class='tit'>申诉类型</view>
+    <!-- 外框 -->
+    <view style='width: 100%; height: 62rpx; border-radius: 10rpx; background-color: #f1f1f1; overflow: hidden;'>
+      <!-- 输入文本 -->
+      <input class='tit-input' placeholder="订单/设备/押金" bindinput="phoneInput" placeholder-style="color:#999999;" maxlength='11' type='number' value='{{phone}}' focus='{{focus}}'></input>
+    </view>
+
+    <view class='tit'>请输入具体描述</view>
+
+    <!-- 输入内容 -->
+    <view class='feedback-con'>
+      <textarea class='feedback' name="feedback" placeholder="写下您的申述原因" placeholder-style="color:#999999;" maxlength='180' value="{{feedback}}"></textarea>
+    </view>
+
+  </view>
+
+  <!-- 提交按钮 -->
+  <view class='submission'>
+    <image style='height: 100%; width: 100%;' src='../../../../static/images/appeal_btn.png'></image>
+  </view>
+
+</form>
+
+
+<view hidden='true'>
+  <popView tit='提交成功!' con='感想您的申述，我们会第一时间解决' number='1'></popView>
+</view>

@@ -1,0 +1,84 @@
+<!--pages/my/mySub/ordercon/ordercon.wxml-->
+
+
+<!-- 顶部区域 -->
+<view class='header-v'>
+  <view style='margin: 0rpx 32rpx;'>
+    <!-- 订单编号和状态 -->
+    <view class='header'>
+
+      <view class='orderid'>订单编号：{{json.orderId}}</view>
+
+      <view class='stat-v'>
+        <view class='stat-tit' style='{{json.state  == "1" ? "color: #1296db;" : "color: #f1464e"}}'>{{json.state  == "1" ? "已完成" : "未完成"}}</view>
+        <view class='stat-icon'>
+          <image style='width: 100%; height: 100%' src='{{json.state == "1" ? "../../../../static/images/ordercon_y.png" : "../../../../static/images/ordercon_n.png"}}'></image>
+        </view>
+      </view>
+
+    </view>
+
+    <!-- 价格 -->
+    <view class='money' style='{{json.state  == "1" ? "color: #1296db" : "color: #f1464e"}}'>￥{{json.pic}}</view>
+    <!-- 使用详情 -->
+    <image class='icon-img' src='../../../../static/images/ordercon_pic.png'></image>
+    <!-- 租借时间 -->
+    <view class='con-v'>
+      <view class='con-tit'>租借时间</view>
+      <view class='con-tit' style='text-align: right; color: #333333;'>{{json.time}}</view>
+    </view>
+    <!-- 租借地点 -->
+    <view class='con-v'>
+      <view class='con-tit'>租借地点</view>
+      <view class='con-tit' style='text-align: right; color: #333333;'>{{json.add}}</view>
+    </view>
+    <!-- 归还时间 -->
+    <view class='con-v'>
+      <view class='con-tit'>归还时间</view>
+      <view class='con-tit' style='text-align: right; color: #333333;'>{{json.oldTime}}</view>
+    </view>
+    <!-- 设备类型 -->
+    <view class='con-v'>
+      <view class='con-tit'>设备类型</view>
+      <view class='con-tit' style='text-align: right; color: #333333;'>{{json.type}}</view>
+    </view>
+    <!-- 归还地点 -->
+    <view class='con-v'>
+      <view class='con-tit'>归还地点</view>
+      <view class='con-tit' style='text-align: right; color: #333333;'>{{json.oldAdd}}</view>
+    </view>
+  </view>
+</view>
+
+
+
+<view class='con-view'>
+  <view style='margin: 0rpx 32rpx;'>
+    <!-- 价格明细 -->
+    <image class='icon-img' src='../../../../static/images/ordercon_standard.png'></image>
+    <!-- 计费标准 -->
+    <view class='con-v'>
+      <view class='con-tit'>计费标准</view>
+      <view class='con-tit' style='text-align: right; color: #333333;'>{{json.standard}}</view>
+    </view>
+    <!-- 使用时长 -->
+    <view class='con-v'>
+      <view class='con-tit'>使用时长</view>
+      <view class='con-tit' style='text-align: right; color: #333333;'>{{json.duration}}</view>
+    </view>
+    <!-- 租金总额 -->
+    <view class='con-v'>
+      <view class='con-tit'>租金总额</view>
+      <view class='con-tit' style='text-align: right; color: #333333;'>{{json.pic}}</view>
+    </view>
+  </view>
+</view>
+
+
+<view class='bottom-v'>
+  <view style='margin: 0rpx 32rpx;'>
+    <!-- 计费规则 -->
+    <image class='icon-img' src='../../../../static/images/ordercon_con.png'></image>
+    <view class='bottom-con'>{{json.rule}}</view>
+  </view>
+</view>

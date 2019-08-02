@@ -1,0 +1,37 @@
+<!--pages/logs/logsSub/store/store.wxml-->
+
+<view class='back-v'>
+
+  <view class='cell' wx:for='{{json}}' wx:key='value' wx:for-index="index" data-index="{{index}}" bindtap='cellPush'>
+    <view class='cell-v' >
+      <image class='img' src='{{item.img}}'></image>
+      <view >
+        <!-- 标题 -->
+        <view class='tit' style='margin-right: 20rpx; margin-left: 20rpx;'>{{item.tit}}</view>
+        <!-- 时间 -->
+        <view style='height: 20rpx; display: block;' style='margin-right: 20rpx; margin-left: 20rpx;'>
+          <view class='day'>{{item.day}}</view>
+          <view class='time'>{{item.time}}</view>
+        </view>
+        <!-- 地址 -->
+        <view class='add' style='margin-right: 20rpx; margin-left: 20rpx;'>{{item.add}}</view>
+        <!-- 操作按钮 -->
+        <view class='bottom-v'>
+          <!-- 可借 -->
+          <view class='bottom-sub' >
+            <view>
+              <view class='tit-l'>可借</view>
+              <view class='tit-r'>{{item.borrow}}</view>
+            </view>
+          </view>
+          <!-- 可还 -->
+          <view class='bottom-subs'>
+            <view class='tit-l'>可还</view>
+            <view class='tit-r'>{{item.still}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>

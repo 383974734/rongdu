@@ -1,0 +1,12 @@
+<!--pages/my/mySub/progress/progress.wxml-->
+<view class='set-background'>
+  <image class='background-image' src='{{backimg}}'></image>
+  <view class='background-content'>
+    <view class='pic'>￥99</view>
+    <view class='tit'>提现金额</view>
+    <view class='tit' style='height: 30rpx; line-height: 30rpx;'>预计0-5个工作日到账</view>
+  </view>
+</view>
+
+<view class='time'>2019-07-26 10:05:35</view>
+<image class='con-img' src='../../../../static/images/progress_con.png'></image>

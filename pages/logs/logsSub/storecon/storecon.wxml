@@ -1,0 +1,38 @@
+<!--pages/logs/logsSub/storecon/storecon.wxml-->
+
+<view class='back-v'>
+
+  <image class='img' src='../../../../static/images/store_img.png'></image>
+  <view class='cell-v'>
+    <view class='cell-tit'>租借充电宝</view>
+
+    <view class='cell-state'>
+      <view class='cell-state-tit'>可还</view>
+      <view class='spot'></view>
+    </view>
+
+    <view class='cell-state' style='margin-right: 50rpx;'>
+      <view class='cell-state-tit'>可借</view>
+      <view class='spot'></view>
+    </view>
+  </view>
+
+  <view class='cell-v'>
+    <view class='add-v'>
+      <image class='add-img' src='../../../../static/images/storecon_add.png'></image>
+      <view class='add-tit'>丽景路与群力第五大道交汇处</view>
+    </view>
+    <view class='add-icon' bindtap='pushMap'>
+      <image class='ic-mimg' src='../../../../static/images/storecon_icon.png'></image>
+      <view class='icon-tit'>235km</view>
+    </view>
+  </view>
+
+  <view class='cell-v'>
+    <view class='time-v'>
+      <image class='time-img' src='../../../../static/images/storecon_time.png'></image>
+      <view class='add-tit'>丽景路与群力第五大道交汇处</view>
+    </view>
+  </view>
+
+</view>

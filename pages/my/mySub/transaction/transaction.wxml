@@ -1,0 +1,19 @@
+<!--pages/my/mySub/transaction/transaction.wxml-->
+<view class='back-v' style='background-color: white; margin-top: 1rpx;'>
+  <view wx:if="{{list.length == 0}}">
+    <image  class='placeholder-img' style='height: {{height}}px;' src='../../../../static/images/transaction_img.png'></image>
+  </view>
+  <view class='cell-v' wx:for="{{list}}" wx:key="value" wx:for-index="index">
+    <!-- 订单号 -->
+    <view class='orderId'>{{item.orderId}}</view>
+    <!-- con -->
+    <view class='con-v'>
+      <view class='type'>{{item.type == 1 ? "充值" : "提现"}}</view>
+      <view class='terminal'>{{item.tit}}</view>
+      <view class='money' style='{{item.type == 1 ? "color: #1296db;" : "color: #333333;"}}'>{{item.type == 1 ? "+" : "-"}}{{item.money}}</view>
+    </view>
+    <!-- time -->
+    <view class='time'>{{item.time}}</view>
+  </view>
+
+</view>

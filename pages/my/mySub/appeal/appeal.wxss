@@ -1,0 +1,46 @@
+/* pages/my/mySub/appeal/appeal.wxss */
+
+.tit {
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  font-size: 34rpx;
+  color: #333333;
+}
+
+.tit-input {
+  height: 62rpx;
+  line-height: 62rpx;
+  border-radius: 10rpx;
+  background-color: #f1f1f1;
+  text-align: left;
+  margin: 0rpx 20rpx;
+  font-size: 30rpx;
+}
+
+.feedback-con {
+  width: 100%;
+  height: 340rpx;
+  background-color: #f1f1f1;
+  border-radius: 10rpx;
+  overflow: hidden;
+  margin-bottom: 25rpx;
+}
+
+.feedback {
+  width: 94%;
+  height: 136rpx;
+  font-size: 30rpx;
+  margin-top: 16rpx;
+  margin-left: 20rpx;
+  margin-bottom: 32rpx;
+  margin-right: 20rpx;
+  color: #333333;
+}
+
+.submission {
+   height: 96rpx;
+   width: 594rpx;
+   margin: 0 auto;
+   margin-top: 50%;
+}

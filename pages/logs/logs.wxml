@@ -1,0 +1,150 @@
+
+
+<!-- <view class='back-view' style='width: {{width}}rpx; height: {{height}}rpx'> -->
+<view class='back-view' >
+<!-- 
+    longitude:  number/中心经度
+
+    latitude:   number/中心纬度
+
+    scale:      number/缩放级别，取值范围为3-20  默认值16  我们这个设置为：18  值越大显示的越清晰    值越小显示的区域越大
+
+    markers:    Array/标记点
+
+    polyline:   Array/路线
+
+    circles:    Array/圆
+
+    controls:   Array/固定在地图的某个位置   一般用来设置中心部分大头针
+
+    include-points: Array/缩放视野以包含所有给定的坐标点
+
+    show-location: 显示带有方向的当前定位点   默认：false
+
+    polygons:   Array/多边形
+
+    subke:      个性化地图使用的key   使用详细说明: https://lbs.qq.com/product/miniapp/guide/
+ -->
+
+
+<!-- <map
+  id='myID'
+  style="width: 100%; height: 100%;"
+  longitude='{{lng}}'
+  latitude='{{lat}}'
+  scale='18'
+  markers='{{markers}}'
+  polyline='{{polyline}}'
+  circles='{{circles}}'
+  controls='{{controls}}'
+  include-points='{{includePoints}}'
+  show-location='true'
+> -->
+  <map
+    id='map'
+    style="width: 100%; height: 100%;"
+    longitude='{{longitude}}'
+    latitude='{{latitude}}'
+    scale= '{{scale}}'
+    markers='{{markers}}'
+    controls='{{controls}}'
+    show-location
+    bindregionchange='regionchange'
+    bindmarkertap="bindmarkertap"
+    bindtap='bindtap'
+  >
+
+  </map>
+
+  <cover-view class="advertisement-v-back" hidden='{{advertisement}}'>
+    <cover-view class='header-con-back'>
+      <cover-view class='hr-con-name-back'>
+        <cover-image class='hr-img-back' src='../../static/images/ad-back.png'></cover-image>
+      </cover-view>
+    </cover-view>
+  </cover-view>
+
+  <!-- 广告view -->
+    <cover-view class="advertisement-v-con" hidden='{{advertisement}}'>
+      <cover-view class='header-con-v'>
+        <cover-view class='hr-con-name-v'>
+          <!-- 两个图片叠加在一起 -->
+          <cover-view class='double-v'> 
+            <cover-image class='hr-img-v' src="../../static/images/icon_cut.png" bindtap='dissClick'></cover-image>
+          </cover-view>
+          <cover-image class='hr-img' src='../../static/images/ad.png'></cover-image>
+        </cover-view>
+      </cover-view>
+    </cover-view>
+
+  <!--定位当前位置-->
+    <cover-view class='position-v' hidden='{{!bittonV}}'>
+      <cover-image class='position-img' src='../../static/images/icon_aim.png' bindtap='moveToLocation'></cover-image>
+    </cover-view>
+
+
+    <cover-view class='position-v' style='bottom: 188rpx;' hidden='{{!bittonV}}'>
+      <cover-image class='self-location' src='../../static/images/icon_customer.png' bindtap='helpClick'></cover-image>
+    </cover-view>
+
+    <cover-view class='position-v-r' bindtap='pushMyClick' hidden='{{!bittonV}}'>
+      <cover-image class='self-location' src='../../static/images/icon_my.png'></cover-image>
+    </cover-view>
+
+    <cover-view class='position-v-r' style='bottom: 188rpx;' bindtap='storeClick' hidden='{{!bittonV}}'>
+      <cover-image class='self-location' src='../../static/images/icon_list.png'></cover-image>
+    </cover-view>
+
+    <cover-view class='position-v-r' style='bottom: 288rpx;' bindtap='searchLocationClick' hidden='{{!bittonV}}'>
+      <cover-image class='self-location' src='../../static/images/icon_search.png'></cover-image>
+    </cover-view>
+
+    <cover-view class='position-v-c' bindtap='getScancode' hidden='{{!bittonV}}'>
+      <cover-image class='self-location' src='../../static/images/button_scan.png'></cover-image>
+    </cover-view>
+
+
+    <!-- //具体位置试图 -->
+
+
+    <cover-view style='position: absolute; bottom: 20rpx; width: 100%; height: 300rpx;' hidden='{{bittonV}}'>
+      <cover-view style='width: 100%; heigth: 100%;'>
+        <cover-view class='hr-con-name-back'>
+          <cover-image class='hr-img-back' src='../../static/images/conad-back.png'></cover-image>
+        </cover-view>
+      </cover-view>
+    </cover-view>
+
+    <cover-view class='shop-bakc-v' hidden='{{bittonV}}' bindtap='shopClick'>
+      <cover-view class='shop-img-v'>
+        <cover-image class='shop-img' src='../../static/images/store_img.png'></cover-image>
+      </cover-view>
+
+      <cover-view class='shop-con-v'>
+        <cover-view class='shop-tit'>汇智金融总部</cover-view>
+        <cover-view class='shop-time-v'>
+          <cover-view class='shop-time'>周一至周日</cover-view>
+          <cover-view class='shop-time' style='margin-left: 20rpx;'>00:00-23:00</cover-view>
+        </cover-view>
+        <cover-view class='shop-add'>丽江路与群力第五大道交口(紧紧紧紧)</cover-view>
+        <cover-view class='shop-btn'>
+          <cover-view class='shop-btn-j'>
+            <cover-view class='shop-btn-v'>
+              <cover-view class='shop-btn-tit'>可借</cover-view>
+              <cover-view class='shop-btn-number'>0</cover-view>
+            </cover-view>
+          </cover-view>
+          <cover-view class='shop-btn-l'>|</cover-view>
+          <cover-view class='shop-btn-h'>
+            <cover-view class='shop-btn-v-r'>
+              <cover-view class='shop-btn-titr'>可还</cover-view>
+              <cover-view class='shop-btn-numberr'>10</cover-view>
+            </cover-view>
+          </cover-view>
+        </cover-view>
+      </cover-view>
+      
+    </cover-view>
+
+</view>
+

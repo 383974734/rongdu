@@ -1,0 +1,92 @@
+/* pages/my/mySub/ordercon/ordercon.wxss */
+.header-v {
+  width: 100%;
+  height: 570rpx;
+  background-color: white;
+  border-bottom: 20rpx solid #f1f1f1;
+}
+
+.header {
+  width: 100%;
+  height: 90rpx;
+}
+
+.orderid {
+  width: 50%;
+  height: 90rpx;
+  line-height: 90rpx;
+  float: left;
+  font-size: 24rpx;
+  color: #333333;
+}
+
+.stat-v {
+  width: 50%;
+  height: 100%;
+  float: right;
+}
+
+.stat-tit {
+  height: 100%;
+  line-height: 90rpx;
+  font-size: 24rpx;
+  float: right;
+}
+
+.stat-icon {
+  width: 26rpx;
+  height: 26rpx;
+  float: right;
+  margin: 19rpx;
+}
+
+.money {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  color: #1296db;
+  font-size: 48rpx;
+}
+
+.icon-img {
+  width: 100%;
+  height: 75rpx;
+}
+
+.con-v {
+  width: 100%;
+  height: 60rpx;
+}
+
+
+.con-tit {
+  width: 50%;
+  height: 100%;
+  line-height: 60rpx;
+  display: inline-block;
+  font-size: 24rpx;
+  color: #999999;
+}
+
+
+.con-view {
+  width: 100%;
+  height: 290rpx;
+  background-color: white;
+  border-bottom: 20rpx solid #f1f1f1;
+}
+
+
+.bottom-v {
+  width: 100%;
+  height: 310rpx;
+  background-color: white;
+  /* border-bottom: 20rpx solid #f1f1f1; */
+}
+
+.bottom-con {
+  line-height: 36rpx;
+  font-size: 24rpx;
+  color: #333333;
+}

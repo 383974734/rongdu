@@ -1,0 +1,39 @@
+<!--pages/my/mySub/order/order.wxml-->
+<view class='clss-v'>
+  <view class='clss_btn' wx:for='{{classTit}}' wx:key="value">
+    <view class='clss-tit'>{{item.tit}}</view>
+    <view class='lis' hidden='{{!item.sele}}'></view>
+  </view>
+</view>
+
+<view wx:if="{{list.length == 0}}">
+    <image  class='placeholder-img' style='height: {{height}}px;' src='../../../../static/images/placeholder_img.png'></image>
+</view>
+
+<view class='lisv-back-v'>
+  <view class='list-v' wx:for="{{list}}" wx:key="value" wx:for-index="index" data-index="{{index}}" bindtap='cellClick'>
+    <view class='list-cell'>
+      <!-- 头部订单编号   和   时间view -->
+      <view class='header-v'>
+        <view class='header-s'>{{item.orderid}}</view>
+        <view class='header-s' style='text-align: right;'>{{item.time}}</view>
+      </view>
+      <!-- 租借地点 -->
+      <view class='con-v'>
+        <view class='con-tit'>租借地点</view>
+        <view class='con-tit' style='text-align: right;'>{{item.add}}</view>
+      </view>
+      <!-- 费用合计 -->
+      <view class='con-v'>
+        <view class='con-tit'>费用合计</view>
+        <view class='con-tit {{item.state == "1" ? "colorg" : "colory"}}' style='text-align: right;'>{{item.money}}</view>
+      </view>
+      <!-- 订单状态 -->
+      <view class='con-v'>
+        <view class='con-tit'>订单状态</view>
+        <view class='con-tit' style='text-align: right;'>{{item.state == "1" ? "已完成" : "未完成"}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+

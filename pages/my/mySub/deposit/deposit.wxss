@@ -1,0 +1,96 @@
+/* pages/my/mySub/deposit/deposit.wxss */
+.tit {
+  width: 100%;
+  height: 150rpx;
+  line-height: 150rpx;
+  margin-left: 32rpx;
+  font-size: 48rpx;
+  color: #333333;
+  font-weight: bold;
+}
+
+.deposit-v {
+  height: 72rpx;
+  margin: 0rpx 32rpx;
+  border: 1rpx solid #f1f1f1;
+  border-radius: 10rrpx;
+}
+
+
+.wechar-v {
+  margin: 10rpx 32rpx;
+  width: 50rpx;
+  height: 50rpx;
+  float: left;
+}
+
+.wechar {
+  width: 100%;
+  height: 100%;
+}
+
+.wechar-tit {
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 30rpx;
+  color: #333333;
+  font-weight: bold;
+  float: left;
+}
+
+.wechar-tits {
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 30rpx;
+  color: #1296db;
+  font-weight: bold;
+  float: right;
+  margin-right: 32rpx;
+}
+
+.money-v {
+  height: 72rpx;
+  margin-right: 32rpx;
+  float: right;
+}
+
+.money-vs {
+  height: 72rpx;
+  margin-left: 32rpx;
+  float: left;
+}
+
+.money-tit {
+  height: 72rpx;
+  line-height: 70rpx;
+  display: inline-block;
+  font-size: 30rpx;
+  color: #333333;
+  font-weight: bold;
+}
+
+.money {
+  height: 72rpx;
+  line-height: 70rpx;
+  display: inline-block;
+  font-size: 30rpx;
+  color: #1296db;
+  margin-left: 32rpx;
+  font-weight: bold;
+}
+
+
+.btn {
+  width: 600rpx;
+  height: 96rpx;
+  position: absolute;
+  left: 50%;
+  margin-left: -300rpx;
+  top: 80%;
+}
+
+
+.btn-img {
+  width: 100%;
+  height: 100%;
+}

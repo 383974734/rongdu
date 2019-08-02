@@ -1,0 +1,30 @@
+<!--pages/logs/logsSub/help/help.wxml-->
+<view class='con-v'>
+
+  <view class='header-tit'>常见问题</view>
+
+  <!-- cell -->
+  <view class='listTow-b' wx:for="{{list}}" wx:key="value" wx:for-index="index" data-row="{{index}}" data-mes="{{item.tit}}" wx:key='sele' bindtap='cellpush'>
+    <view style='width: 100%; height: 100%; overflow: hidden;'>
+      <!-- row-标题 -->
+      <view class='listTow-tit'>{{item.tit}}</view>
+      <!-- row-箭头 -->
+      <image class='listTow-push' src='{{!item.sele ? "../../../../static/images/help_n.png" : "../../../../static/images/help_y.png"}}' mode='aspectFill'></image>
+    </view>
+    <!-- 一根线 -->
+    <view class='lis-v'></view>
+    <view class='sub-v' hidden='{{!item.sele}}'>
+      <view class='sub-tit' wx:for='{{item.subtit}}' wx:key="value">{{item}}</view>
+    </view>
+  </view>
+</view>
+
+
+
+<view class='bottom-v'>
+  <view class='help-tit'>以上还不能解决的话，还可以尝试...</view>
+  <view class='btn'>
+    <image  class='btn-img' src='../../../../static/images/help_tel.png'></image>
+  </view>
+
+</view>
